@@ -10,15 +10,18 @@
 
 #include<vector>
 #include "Row.h"
+#include <string>
 
-class Sudoku {
+class Sudoku
+{
 public:
 	Sudoku();
+	Sudoku(std::string);
 	virtual ~Sudoku();
 private:
 	std::vector<Row> table[9];
 	bool check_panel(int, int, int);
-	bool check_column(int);
+	bool check_column(int, int, int);
 
 };
 

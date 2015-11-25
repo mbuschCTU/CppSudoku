@@ -7,6 +7,7 @@
 
 #include "Row.h"
 #include "Cell.h"
+#include <vector>
 
 Row::Row() {
 	// TODO Auto-generated constructor stub
@@ -28,3 +29,13 @@ bool Row::isUnique(int v)
 	return true;
 }
 
+int Row::calcTotal()
+{
+	int total =0;
+	 for (std::vector<Cell>::iterator it = cells->begin() ; it != cells->end(); ++it)
+	 {
+		 total += it->value;
+	 }
+
+	 return total;
+}

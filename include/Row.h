@@ -18,6 +18,7 @@ public:
 	virtual ~Row();
 	bool isUnique(int v);
 //	Cell getCell(int i);
+	int calcTotal();
 private:
 
 };

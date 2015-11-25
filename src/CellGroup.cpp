@@ -5,7 +5,7 @@
  *      Author: adminuser
  */
 
-#include "CellGroup.h"
+#include "/home/adminuser/workspace/Sudoku/include/CellGroup.h"
 
 CellGroup::CellGroup() {
 	// TODO Auto-generated constructor stub
@@ -23,4 +23,8 @@ bool CellGroup::isComplete()
 Cell CellGroup::getCell(int c)
 {
 	return cells->at(c);
+}
+void CellGroup::putValue(int v)
+{
+
 }

@@ -20,6 +20,7 @@ public:
 	virtual int calcTotal() = 0;
 	bool isComplete();
 	Cell getCell(int c);
+	void putValue(int);
 protected:
 	std::vector <Cell> cells[9];
 	static const int total_value = 45;
