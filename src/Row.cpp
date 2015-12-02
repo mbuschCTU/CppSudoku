@@ -34,7 +34,7 @@ int Row::calcTotal()
 	int total =0;
 	 for (std::vector<Cell>::iterator it = cells->begin() ; it != cells->end(); ++it)
 	 {
-		 total += it->value;
+		 total += it->getValue();
 	 }
 
 	 return total;

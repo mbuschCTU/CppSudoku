@@ -18,10 +18,14 @@ public:
 	Sudoku();
 	Sudoku(std::string);
 	virtual ~Sudoku();
+	int solve();
+	void print_board();
 private:
 	std::vector<Row> table[9];
 	bool check_panel(int, int, int);
 	bool check_column(int, int, int);
+	bool check_row(int, int, int);
+	int recursive_solve(int, int);
 
 };
 

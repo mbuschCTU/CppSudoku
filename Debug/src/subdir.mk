@@ -7,19 +7,22 @@ CPP_SRCS += \
 ../src/Cell.cpp \
 ../src/CellGroup.cpp \
 ../src/Row.cpp \
-../src/Sudoku.cpp 
+../src/Sudoku.cpp \
+../src/main.cpp 
 
 OBJS += \
 ./src/Cell.o \
 ./src/CellGroup.o \
 ./src/Row.o \
-./src/Sudoku.o 
+./src/Sudoku.o \
+./src/main.o 
 
 CPP_DEPS += \
 ./src/Cell.d \
 ./src/CellGroup.d \
 ./src/Row.d \
-./src/Sudoku.d 
+./src/Sudoku.d \
+./src/main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

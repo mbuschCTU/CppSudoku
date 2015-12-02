@@ -15,7 +15,7 @@ class Row: public CellGroup
 {
 public:
 	Row();
-	virtual ~Row();
+	~Row();
 	bool isUnique(int v);
 //	Cell getCell(int i);
 	int calcTotal();

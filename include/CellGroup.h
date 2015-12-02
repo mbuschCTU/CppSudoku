@@ -16,7 +16,7 @@ class CellGroup
 public:
 	CellGroup();
 	virtual ~CellGroup();
-	virtual bool isUnique() = 0;
+	virtual bool isUnique(int) = 0;
 	virtual int calcTotal() = 0;
 	bool isComplete();
 	Cell getCell(int c);

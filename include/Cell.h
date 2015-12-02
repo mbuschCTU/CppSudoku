@@ -16,6 +16,7 @@ public:
 	Cell(const Cell&);
 	virtual ~Cell();
 	bool checkExists(int v);
+	int getValue(){ return this->value; }
 private:
 	int value;
 };
